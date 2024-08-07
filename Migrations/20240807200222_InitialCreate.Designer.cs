@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleDgn.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240807190512_InitialCreate")]
+    [Migration("20240807200222_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -48,7 +48,7 @@ namespace ControleDgn.Migrations
 
                     b.HasKey("PadraoId");
 
-                    b.ToTable("Padroes");
+                    b.ToTable("Padrao");
                 });
 #pragma warning restore 612, 618
         }

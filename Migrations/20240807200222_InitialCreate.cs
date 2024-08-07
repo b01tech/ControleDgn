@@ -12,7 +12,7 @@ namespace ControleDgn.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Padroes",
+                name: "Padrao",
                 columns: table => new
                 {
                     PadraoId = table.Column<int>(type: "INTEGER", nullable: false)
@@ -26,7 +26,7 @@ namespace ControleDgn.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Padroes", x => x.PadraoId);
+                    table.PrimaryKey("PK_Padrao", x => x.PadraoId);
                 });
         }
 
@@ -34,7 +34,7 @@ namespace ControleDgn.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Padroes");
+                name: "Padrao");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ControleDgn.Models.Enums
 {
-    internal enum StatusPadrao
+    public enum StatusPadrao
     {
         Vigente,
         Reprovado,

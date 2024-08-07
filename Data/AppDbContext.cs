@@ -1,15 +1,18 @@
 ﻿using ControleDgn.Models;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
 
 namespace ControleDgn.Data
 {
-    internal class AppDbContext: DbContext
+    public class AppDbContext : DbContext
     {
-        DbSet<Padrao> Padroes { get; set; }
+        public DbSet<Padrao> Padrao { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"DataSource=Data\AppDb.db");
+            string dirPath = AppDomain.CurrentDomain.BaseDirectory;
+            string dbPath = Path.Combine(dirPath, @"..\..\..\Data\AppDb.db");
+            optionsBuilder.UseSqlite($"DataSource={dbPath}");
         }
     }
 }

@@ -45,7 +45,7 @@ namespace ControleDgn.Migrations
 
                     b.HasKey("PadraoId");
 
-                    b.ToTable("Padroes");
+                    b.ToTable("Padrao");
                 });
 #pragma warning restore 612, 618
         }

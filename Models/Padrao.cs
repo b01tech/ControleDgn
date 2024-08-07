@@ -2,7 +2,7 @@
 
 namespace ControleDgn.Models
 {
-    internal class Padrao
+    public class Padrao
     {
         public int PadraoId { get; set; }
         public string Tag { get; set; }

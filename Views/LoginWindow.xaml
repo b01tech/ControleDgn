@@ -40,6 +40,6 @@
             <Label Content="Senha:"/>
             <TextBox x:Name="txtSenha"/>
         </StackPanel>
-        <Button x:Name="btnEntrar" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="6" Content="Entrar" Width="100"/>
+        <Button x:Name="btnEntrar" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="6" Content="Entrar" Width="100" Click="btnEntrar_Click"/>
     </Grid>
 </Window>
